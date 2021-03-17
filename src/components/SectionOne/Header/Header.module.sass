@@ -4,13 +4,11 @@
     width: 100%
     height: $header-height
     padding: 18px 0
-
 .headerWrapper
     display: flex
     justify-content: space-between
     align-items: center
     height: 100%
-
 .logo
     height: 100%
     display: flex
@@ -18,18 +16,16 @@
     font-size: $font-size-main
     font-weight: $font-bold
     color: $text-color-thrive
-
 .navWrap
     height: 100%
     display: flex
     align-items: center
-
+    z-index: 10
 .navMenu
     display: flex
     list-style: none
     padding: 0
     margin: 0
-
 .navMenuItem
     padding: 10px 0
     margin-right: 15px
@@ -37,11 +33,9 @@
     font-weight: $font-regular
     font-size: 14px
     position: relative
-
     &:last-child
         margin-right: 0
     &:hover
-
         cursor: pointer
         &::after
             content: ''
@@ -50,7 +44,6 @@
             right: 0
             width: 100%
             border-bottom: 1px solid $text-color-blue
-
 .buttonWrap
     z-index: 3
 .buttonContact
