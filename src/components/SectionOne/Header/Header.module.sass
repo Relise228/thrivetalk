@@ -1,0 +1,67 @@
+@import '../../../scss/variables.sass'
+
+.header
+    width: 100%
+    height: $header-height
+    padding: 18px 0
+
+.headerWrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+.logo
+    height: 100%
+    display: flex
+    align-items: center
+    font-size: $font-size-main
+    font-weight: $font-bold
+    color: $text-color-thrive
+
+.navWrap
+    height: 100%
+    display: flex
+    align-items: center
+
+.navMenu
+    display: flex
+    list-style: none
+    padding: 0
+    margin: 0
+
+.navMenuItem
+    padding: 10px 0
+    margin-right: 15px
+    color: $text-color-blue
+    font-weight: $font-regular
+    font-size: 14px
+    position: relative
+
+    &:last-child
+        margin-right: 0
+    &:hover
+
+        cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            top: 35px
+            right: 0
+            width: 100%
+            border-bottom: 1px solid $text-color-blue
+
+.buttonWrap
+    z-index: 3
+.buttonContact
+    width: 150px
+    height: 50px
+    background-color: $button-color-contact
+    color: $text-color-white
+    font-size: 14px
+    font-weight: $font-regular
+    border: none
+    border-radius: 50px
+    outline: none
+    cursor: pointer
+    z-index: 3
