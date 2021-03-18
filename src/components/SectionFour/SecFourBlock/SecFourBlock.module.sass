@@ -1,0 +1,36 @@
+@import '../../../scss/variables'
+
+.secFourBlock
+    background-size: cover
+    height: 480px
+    width: 33.333%
+.line
+    max-width: 340px
+    width: 100%
+    border-bottom: 2px solid #ffffff
+    margin: 96px 70px 0 70px
+
+.secFourBlockTitle
+    font-size: $font-size-sub-title
+    font-weight: $font-bold
+    color: $text-color-white
+    margin-left: 90px
+    padding-top: 30px
+    position: relative
+    &::before
+        content: ''
+        width: 10px
+        height: 10px
+        background-color: #E9B730
+        position: absolute
+        border-radius: 50%
+        top: 42px
+        left: -20px
+
+@media screen and ( max-width:  1200px)
+    .secFourBlock
+        width: 50%
+
+@media screen and ( max-width:  850px)
+    .secFourBlock
+        width: 100%
