@@ -1,27 +1,9 @@
 import React from 'react';
+import {blockData} from '../../data/data';
 import SecThreeBlock from './SecThreeBlock/SecThreeBlock';
 import s from './SectionThree.module.sass';
 
 function SectionThree() {
-  const blockData = [
-    {
-      text: 'Weight Lifting',
-      color: '#FFE2DE',
-    },
-    {
-      text: 'Running & Spinning',
-      color: '#C4E769',
-    },
-    {
-      text: 'Pumping Iron',
-      color: '#62D0DF',
-    },
-    {
-      text: 'Pumping Iron',
-      color: '#0052C1',
-    },
-  ];
-
   return (
     <div className={s.secThree}>
       <div className={s.secThreeAbout}>

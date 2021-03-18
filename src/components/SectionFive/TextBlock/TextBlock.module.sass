@@ -1,0 +1,31 @@
+@import '../../../scss/variables'
+
+.textBlock
+    width: 33.333%
+    height: 240px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.textBlockTitle
+    padding-left: 105px
+    font-size: $font-size-sub-title-mini
+    font-weight: $font-regular
+    color: $text-color-blue
+.textBlockDescription
+    padding-left: 105px
+    max-width: 298px
+    width: 100%
+    margin-top: 28px
+    color: rgba(34, 53, 111, 0.5)
+    font-weight: $font-light
+    font-size: $font-size-text-description
+    line-height: 25px
+
+@media screen and ( max-width:  1200px)
+    .textBlock
+        width: 50%
+
+@media screen and ( max-width:  850px)
+    .textBlock
+        width: 100%
